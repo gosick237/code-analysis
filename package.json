@@ -2,9 +2,11 @@
   "name": "code-analysis",
   "version": "1.0.0",
   "description": "knowledge level analysis",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "ls"
+    "server": "nodemon server/server.js",
+    "client": "cd client && yarn start",
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,10 @@
   },
   "homepage": "https://github.com/gosick237/code-analysis#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.12"
   }
 }

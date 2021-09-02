@@ -1,2 +1,5 @@
 # 폴더
-node_module/
+node_modules/
+
+# 파일들
+*.lock

@@ -1,0 +1,26 @@
+{
+  "name": "code-analysis",
+  "version": "1.0.0",
+  "description": "knowledge level analysis",
+  "main": "index.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gosick237/code-analysis.git"
+  },
+  "keywords": [
+    "codeAnalysis"
+  ],
+  "author": "yh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gosick237/code-analysis/issues"
+  },
+  "homepage": "https://github.com/gosick237/code-analysis#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}

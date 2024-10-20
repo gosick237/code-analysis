@@ -1,31 +1,29 @@
 {
-  "name": "code-analysis",
+  "name": "knowledgelevelanalysis",
   "version": "1.0.0",
-  "description": "knowledge level analysis",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "server": "nodemon server/server.js",
-    "client": "cd client && yarn start",
-    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main": "npx ts-node src/index.ts",
+    "test-pa": "npx ts-node src/sca/test/testPrerequisiteAnalysis.ts",
+    "codeQuality": "npx ts-node src/sca/test/testCodeQuality.ts",
+    "dev_test": "clear && tsc && node out/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gosick237/code-analysis.git"
-  },
-  "keywords": [
-    "codeAnalysis"
-  ],
-  "author": "yh",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gosick237/code-analysis/issues"
-  },
-  "homepage": "https://github.com/gosick237/code-analysis#readme",
   "dependencies": {
-    "concurrently": "^6.2.1",
-    "express": "^4.17.1"
+    "@types/eslint": "^7.28.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "requireindex": "^1.2.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2",
+    "yarn": "^1.22.11"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "@types/node": "^16.9.1"
   }
 }
